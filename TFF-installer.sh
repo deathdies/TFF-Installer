@@ -21,10 +21,10 @@ echo -e "${NC} • ${DW}WWait a Second..!!"
 directory="$(pwd)"
 mkdir $PREFIX/tmp/adbtemp
 downpath="$PREFIX/tmp/adbtemp"
-wget https://github.com/MasterDevX/Termux-ADB/raw/master/bin/adb -P $downpath/ -q
-wget https://github.com/MasterDevX/Termux-ADB/raw/master/bin/adb.bin -P $downpath/ -q
-wget https://github.com/MasterDevX/Termux-ADB/raw/master/bin/fastboot -P $downpath/ -q
-wget https://github.com/MasterDevX/Termux-ADB/raw/master/bin/fastboot-armeabi -P $downpath/ -q
+wget https://raw.githubusercontent.com/deathdies/TFF-Installer/main/bin/adb -P $downpath/ -q
+wget https://raw.githubusercontent.com/deathdies/TFF-Installer/main/bin/adb.bin -P $downpath/ -q
+wget https://raw.githubusercontent.com/deathdies/TFF-Installer/main/bin/fastboot -P $downpath/ -q
+wget https://raw.githubusercontent.com/deathdies/TFF-Installer/main/bin/fastboot-armeabi -P $downpath/ -q
 cp $downpath/* $PREFIX/bin
 files="$(ls $downpath)"
 cd $PREFIX/bin
