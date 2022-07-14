@@ -6,11 +6,11 @@ echo
 echo -e "\e[32m[*] \e[34mDownloading wrapper script..."
 mkdir $PREFIX/tmp/adbtemp
 downpath="$PREFIX/tmp/adbtemp"
-wget https://github.com/deathdies/TFF-Installer/raw/master/bin/adb -P $downpath/ -q
+wget https://raw.githubusercontent.com/deathdies/TFF-Installer/main/bin/adb -P $downpath/ -q
 echo -e "\e[32m[*] \e[34mDownloading binaries..."
-wget https://github.com/deathdies/TFF-Installer/raw/master/bin/adb.bin -P $downpath/ -q
-wget https://github.com/deathdies/TFF-Installer/raw/master/bin/fastboot -P $downpath/ -q
-wget https://github.com/deathdies/TFF-Installer/raw/master/bin/fastboot-armeabi -P $downpath/ -q
+wget https://raw.githubusercontent.com/deathdies/TFF-Installer/main/bin/adb.bin -P $downpath/ -q
+wget https://raw.githubusercontent.com/deathdies/TFF-Installer/main/bin/fastboot -P $downpath/ -q
+wget https://raw.githubusercontent.com/deathdies/TFF-Installer/main/bin/fastboot-armeabi -P $downpath/ -q
 echo -e "\e[32m[*] \e[34mCopying files to bin..."
 cp $downpath/* $PREFIX/bin
 echo -e "\e[32m[*] \e[34mSetting execution permissions..."
