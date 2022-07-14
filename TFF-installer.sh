@@ -8,9 +8,7 @@ NC="\e[0;0m"
 BR="\e[41m"
 BW="\e[104m"
 DW="\e[1;30"
-directory="$(pwd)"
-mkdir $PREFIX/tmp/adbtemp
-downpath="$PREFIX/tmp/adbtemp"
+function lg() {
 echo -e "${NC} • ${BR}Created by de@Hdies${NC} • • •"
 echo -e "${NC} • ${BW}Termux ADB & Fastboot Flash Installer Tools${NC} • •"
 echo -e "${NC} •  ${Y}Installing ${NC}:"
@@ -21,6 +19,12 @@ echo -e "${NC}•    ${C}-$NC) ${R}Copying ${G}fastboot-armeabi ${Y}To Folder bi
 echo -e "${NC}•  ${R}+${NC}) ${C}Process${NC}"
 echo -e "${NC} • • • • • • • • • • • • • • • ${BR}TF-Flash Installer Tools${NC}"
 echo -e "${NC} • ${DW}WWait a Second..!!"
+}
+
+directory="$(pwd)"
+mkdir $PREFIX/tmp/adbtemp
+downpath="$PREFIX/tmp/adbtemp"
+lg
 wget https://github.com/deathdies/TFF-Installer/raw/master/bin/adb -P $downpath/ -q
 wget https://github.com/deathdies/TFF-Installer/raw/master/bin/adb.bin -P $downpath/ -q
 wget https://github.com/deathdies/TFF-Installer/raw/master/bin/fastboot -P $downpath/ -q
