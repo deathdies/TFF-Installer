@@ -25,4 +25,4 @@ fi
 echo -e "\e[32m[*] \e[34mCleaning up..."
 cd $directory
 rm -rf $downpath
-rm -rf InstallTools.sh
+rm -rf TFF-Installer.sh
