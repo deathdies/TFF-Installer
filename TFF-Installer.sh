@@ -17,7 +17,7 @@ echo -e "${NC}•    ${C}-$NC) ${R}Copying ${G}adb.bin ${Y}To Folder bin${DW}...
 echo -e "${NC}•    ${C}-$NC) ${R}Copying ${G}fastboot ${Y}To Folder bin${DW}...!!"
 echo -e "${NC}•    ${C}-$NC) ${R}Copying ${G}fastboot-armeabi ${Y}To Folder bin${DW}...!!"
 echo -e "${NC}•  ${R}+${NC}) ${C}Process${NC}"
-echo -e "${NC} • • • • • • • • • • • • • • • ${BR}TF-Flash Installer Tools${NC}"
+echo -e "${NC} • • • • • • • • • • • • • ${BR}TF-Flash Installer Tools${NC}"
 echo -e "${NC} • ${DW}WWait a Second..!!"
 }
 logo
