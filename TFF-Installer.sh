@@ -38,4 +38,5 @@ if [ ! -d "adbfiles" ]; then
 fi
 cd $directory
 rm -rf $downpath
+rm -rf adbfiles
 rm TFF-Installer.sh
